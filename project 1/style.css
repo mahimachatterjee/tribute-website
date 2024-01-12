@@ -1,0 +1,86 @@
+*{
+    margin: 0; /*since browser automatically gives a lil margin*/
+    padding: 0; /*An element's padding area is the space between its content and its border. Note: Padding creates extra space within an element. In contrast, margin creates extra space around an element.*/
+    box-sizing: border-box;/*The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now*/
+}
+
+.container{
+    background-color: #E5E5FD;
+   min-height: 100vh; /*vh=viewport's height i.e the viewable height view )(and min height100 means the min height of an element should be 100% of the viewpoint height)(min-height specifies the minimum height that an element should have, preventing it from becoming smaller than the specified value. On the other hand, max-height sets the maximum height that an element can grow to, preventing it from exceeding the specified value.)*/
+   border: 10px solid #1D1E4C;
+}
+
+.content{
+    max-width: 900px;
+    margin: 0 auto;     /*top down=0 & left right=auto (centre)*/
+}
+
+.top_section{         /*everything related to image */
+    margin-top: 100px;
+    display: flex;      /*top section and image container are seperated side by side */
+    justify-content: space-between;/*space between top section and image container */
+    align-items: flex-end;  /*name of rumi text will come down to the side of image */
+}
+.top_section h1{         /*everything related to the name  of rumi*/
+    font-size: 50px;
+    font-weight: bold;
+    color: #1D1E4C;
+    text-transform: uppercase;
+}
+
+.top_section h2{
+    
+    text-align: end;
+}
+
+.image_container{
+    border-radius: 50%;
+    overflow: hidden;    /*makes the rectangular or suared photo into round*/
+}
+.image_container,
+img{
+    width: 300px;
+    height: 320px;
+}
+
+.about_section{
+    margin-top: 50px;
+}
+.about_section h2{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.about_section p{
+    font-size:  20px; 
+    line-height: 20px;
+    letter-spacing: 1.1px;
+    text-align: justify;
+}
+
+.legacy_section{
+    margin-top: 50px;
+}
+
+.legacy_section h3{
+    margin-bottom: 20px;
+}
+
+.legacy_section ul{
+    margin-left: 50px;
+}
+
+.legacy_section li{
+    margin-bottom: 15px;
+}
+
+footer{
+    margin: 50px;
+
+}
+
+footer p{
+    text-align: end;
+}
+
